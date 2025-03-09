@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria AutoCuidado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@400;700&family=Righteous&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="./assets/coffe-shop-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="./assets/coffe-shop-logo.svg" alt="logo">
+        </h1>
+    </header>
+    <div class="container">
+        <div class="form-drink">
+            <h2>Escolha sua bebida</h2>
+            <div class="drinks-container">
+                <div class="drink-item" onclick="addToCart('Café Puro')">
+                    <img src="./assets/coffe.svg" alt="Café Puro">
+                    <p>Café Puro</p>
+                    <span class="add-to-cart-btn">Adicionar ao Carrinho</span>
+                </div>
+                <div class="drink-item" onclick="addToCart('Café com Leite')">
+                    <img src="./assets/coffe-milk.svg" alt="Café com Leite">
+                    <p>Café com Leite</p>
+                    <span class="add-to-cart-btn">Adicionar ao Carrinho</span>
+                </div>
+                <div class="drink-item" onclick="addToCart('Chocolate')">
+                    <img src="./assets/chocolate.svg" alt="Chocolate">
+                    <p>Chocolate</p>
+                    <span class="add-to-cart-btn">Adicionar ao Carrinho</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart"></ul>
+            <span class="clear-cart-btn" onclick="clearCart()">Limpar Carrinho</span>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
